@@ -1,0 +1,90 @@
+Задание №1
+a = int(input('Введите 1 число: '))
+b = int(input('Введите 2 число: '))
+c = int(input('Введите 3 число: '))
+if a == b == c:
+    print(a + b + c)
+    print(a + b + c)
+    print(a + b + c)
+elif a <= b and a <= c:
+    print(a + b + c)
+elif b <= a and b <= c:
+    print(a + b + c)
+elif c <= a and c <= b:
+    print(a + b + c)
+else:
+    print('Что-то не то!')
+
+Задание №2
+a = int(input('Введите 1 число: '))
+b = int(input('Введите 2 число: '))
+c = int(input('Введите 3 число: '))
+d = int(input('Введите 4 число: '))
+if a == b == c == d:
+    print('Все равны.')
+elif a < b and a < c and a < d:
+    print(a)
+elif b < a and b < c and b < d:
+    print(b)
+elif c < a and c < b and c < d:
+    print(c)
+elif d < b and d < c and d < a:
+    print(d)
+else:
+    print('Что-то не то!')
+
+Задание №3
+a = int(input('Введите 1 число: '))
+b = int(input('Введите 2 число: '))
+c = int(input('Введите 3 число: '))
+if a % 2 == 0 and b % 2 == 0 and c % 2 == 0:
+    print(a + b + c)
+elif a % 2 == 0 and b % 2 == 0 and c % 2 != 0:
+    print(a + b)
+elif a % 2 == 0 and b % 2 != 0 and c % 2 == 0:
+    print(a + c)
+elif a % 2 != 0 and b % 2 == 0 and c % 2 == 0:
+    print(b + c)
+else:
+    print('Введите другое значение!')
+
+Задание №4
+a = int(input('Введите 1ю сторону треугольника: '))
+b = int(input('Введите 2ю сторону треугольника: '))
+c = int(input('Введите 3ю сторону треугольника: '))
+if a == 0 or b == 0 or c == 0:
+    print('неверные данные сторон')
+elif (a+b) < c or (a+c) < b or (b+c) < a:
+    print('неверные стороны')
+elif a == b == c:
+    print('равносторонний')
+elif (a == b) or (a == c) or (b == c):
+    print('равнобедренный')
+else:
+    print('разносторонний')
+
+Задание №5
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+c = list(set(a) & set(b))
+print(c)
+
+Задание №6
+tir = int(input('Введите целое число: '))
+if tir >= -1 and tir <= 17:
+    print('принадлежит')
+else:
+    print('не принадлежит')
+
+Задание №7
+tir = int(input('Введите число сторон геометрической фигуры: '))
+if tir == 0:
+    print('круг')
+elif tir == 3:
+    print('треугольник')
+elif tir == 4:
+    print('прямоугольник')
+elif tir == 6:
+    print('шестиугольк')
+else:
+    print('Такой фигуры я не знаю.')
